@@ -1,0 +1,85 @@
+#app{
+    display: flex;
+    flex-direction: column;
+}
+
+#app > header{
+    margin: 5% 5% 0;
+}
+
+#manage_panel{
+    align-items: center;
+    z-index: 3;
+    height: 30px;
+    position: sticky;
+    top: -1px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 5% 0;
+    background: #cecdc4;
+}
+#manage_panel_shadow_line{
+    position: sticky;
+    top: 28px;
+    box-shadow: 0 2px 0.5px 0.5px rgba(0,0,0,0.6), 0px 3px 3px 0.5px rgba(0,0,0,0.7);
+}
+
+#cover_line {
+    position: absolute;
+    background: #cecdc4;
+    width: 100%;
+    height: 8px;
+}
+
+.panel_item{
+    display: flex;
+    align-items: center;
+    margin: 0 5px 0 0;
+}
+.panel_item > img {
+    height: 18px;
+}
+
+.used_panel_items{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#option_4{
+    color: rgba(0,0,0,0.25);
+    margin-left: auto;
+}
+
+body{
+    background: #cecdc4;
+}
+
+#editor_header{
+    min-height: 30px;
+    border-bottom: 0.5px solid rgba(0,0,0, 0.3);
+}
+#editor_header > p{
+    margin-left: 2%;
+    font-size: small;
+}
+#editor_content{
+    height: 2000px;
+    min-height: 250px;
+}
+#editor-main{
+    display: flex;
+    flex-direction: column;
+    margin: 9px 5% 0;
+    background: white;
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.16), 0 0 1px 1px rgba(0, 0, 0, .12);
+    border-radius: 3px;
+}
+
+#editor_content > textarea{
+    resize: none;
+    outline: none;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+}
